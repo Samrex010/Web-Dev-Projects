@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+*,html{
+  box-sizing: border-box;
+}
+
+body{
+  /* height: 100vh; */
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #111, #333);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+/* li a:visited, li a:hover{
+  color: black;
+} */
+ul{
+  list-style: none;
+  margin-top: 0;
+}
+li{
+  list-style: none;
+}
+
+header{
+  position: sticky;
+  top:0;
+  background-color: rgba(51, 51, 51, 0.922);
+  border-bottom: 1px solid #ffd5d5;
+  height: 48px;
+}
+.item{
+  padding: 10px 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+   .item:hover{
+    background-color: rgb(36, 36, 36);
+   }
+   .item:hover .btn{
+     color: #ffd5d5;
+   }
+i{
+  padding-right: 5px;
+}
+.sub-menu{
+  position: fixed;
+  top: 44px;
+  background: linear-gradient(160deg, #111, #333);
+  border: 2px solid #a6e0ff;
+  color: #eee;
+  max-width: auto;
+  overflow: hidden;
+  display: none;
+  padding: 5px 10px 10px 10px;
+}
+.sub-menu li{
+  padding: 1px 10px;
+}
+.sub-menu li a{
+  color: #dadada;
+  text-decoration: none;
+  transition: 90ms all;
+  font-size: 16px;
+}
+  .sub-menu li a:hover{
+  background-color: rgb(36, 36, 36);
+  color: #a6e0ff;
+  }
+
+.btn{
+  color: white;
+  text-decoration: none;
+}
+.btn:hover{
+  color: #ffd5d5;
+}
+.item:hover .sub-menu{
+  display: block;
+}
+.section{
+  color: #eee;
+  padding: 10px 180px;
+  text-align: justify;
+}
+  .section h2{
+    font-size: 28px;
+    text-align: center;
+  }
+
+@media (max-width:970px){
+  .section{
+    padding: 10px 16px;
+  }
+}
